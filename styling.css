@@ -14,7 +14,7 @@
   }
   
   .front{
-    flex-basis: 20%;
+    flex-basis: 30%;
     padding: 10px 10px;
     gap: 10px;
     display: flex;
@@ -43,10 +43,11 @@
 
   .gallery {
     display: grid;
-    margin: 0;
+    margin: 2px;
+    padding: 10px;
     flex-basis: 100%;
     display: grid;
-    gap: 2px;
+    gap: 10px;
     grid-template-columns:repeat(3 , 3fr);
     grid-auto-rows: 130px;
   }
