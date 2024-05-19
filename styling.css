@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  .row2 {
+    grid-row: span 2;
+  }
+  
+  .col2 {
+    grid-column: span 2;
+  }
+  
+  .front{
+    flex-basis: 20%;
+    padding: 10px 10px;
+    gap: 10px;
+    display: flex;
+    min-height: 25vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(to right ,rgb(42, 73, 2) ,rgb(32, 171, 108) );
+    margin-bottom: 0.1vh;
+  }
+  
+  .heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 7px;
+    font-size: 69px;
+    text-align: center;
+  }
+  
+  .sub-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 5px ;
+    text-align: center; }
+
+  .gallery {
+    display: grid;
+    margin: 0;
+    flex-basis: 100%;
+    display: grid;
+    gap: 2px;
+    grid-template-columns:repeat(3 , 3fr);
+    grid-auto-rows: 130px;
+  }
+  
+  .box {
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: "Bodoni Moda", serif;
+    font-size : 15px;
+    background-color: #222;
+    background-blend-mode:hard-light;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 1s ease-in-out ;
+  }
+  
+  .box:hover {
+    background-color: rgb(108, 108, 108);
+    background-position: center;
+    box-shadow: 0 0 4px white;
+  }
+  
+  .footer {
+    background: rgba(93, 74, 4, 0.868);
+    font-family: "Poppins", sans-serif;
+    text-decoration: solid;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4vh;
+  }
+  
+  @media screen and (max-width: 1440px) {
+    .front {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .gallery {
+      width: 100%;
+      grid-auto-rows: 220px;
+    }
+    .box {
+      grid-row: span 1;
+      grid-column: span 3;
+    }
+  }
+
+
+
+
+
+
